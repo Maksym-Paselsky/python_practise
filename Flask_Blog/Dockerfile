@@ -2,7 +2,7 @@ FROM  ubuntu:20.04
 
 RUN apt-get update -y
 RUN apt-get install python3-pip -y
-RUN apt-get gunicorn3 -y
+RUN apt-get install gunicorn3 -y
 
 COPY requirements.txt requirements.txt
 COPY flaskblog /opt/
